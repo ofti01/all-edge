@@ -9,18 +9,27 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
 @Slf4j
 @RequiredArgsConstructor
-public class CompteService {
+public class ClientService {
 
     private final ClientRepository clientRepository;
 
     public ClientDto saveClient(ClientDto clientDto){
         log.debug("save client ",clientDto);
         return toDto(clientRepository.save(fromDto(clientDto)));
+    }
+
+    public List<ClientDto> getAllClient(){
+        log.debug("request to get all clients");
+        return clientRepository.findAll().stream()
+                .map(ClientService::toDto)
+                .collect(Collectors.toList());
     }
 
     public static Client fromDto(ClientDto clientDto){

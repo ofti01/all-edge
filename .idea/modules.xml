@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/all-edge.iml" filepath="$PROJECT_DIR$/.idea/all-edge.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/compte/compte.iml" filepath="$PROJECT_DIR$/compte/compte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operation/operation.iml" filepath="$PROJECT_DIR$/operation/operation.iml" />
     </modules>
   </component>
 </project>
