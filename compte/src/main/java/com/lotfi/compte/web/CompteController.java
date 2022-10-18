@@ -14,6 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/compte-service")
 public class CompteController {
+
     private final CompteService compteService;
 
     @GetMapping("/comptescourants")
@@ -21,6 +22,7 @@ public class CompteController {
         List<CompteCourantDto> list = compteService.getAllComptes();
         return new ResponseEntity<>(list,HttpStatus.OK);
     }
+
     @PostMapping("/comptescourants")
     public ResponseEntity<CompteCourantDto> saveCompteCourant(@RequestBody CompteCourantDto compteCourantDto){
         CompteCourantDto courantDto = compteService.SaveCompteCourant(compteCourantDto);
