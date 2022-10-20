@@ -28,4 +28,10 @@ public class ClientController {
         List<ClientDto> list = clientService.getAllClient();
         return new ResponseEntity<>(list,HttpStatus.ACCEPTED);
     }
+
+    @PostMapping("/check")
+    public ResponseEntity<ClientDto> getOne(@RequestBody String cin) {
+        ClientDto clientDto = clientService.getOne(cin);
+        return new ResponseEntity<>(clientDto,HttpStatus.CREATED);
+    }
 }

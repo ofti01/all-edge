@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 
 @FeignClient(name ="client-service")
 public interface ClientProxy {
-    
+
     @LoadBalanced
     public Boolean CheckCinIfExist(String cin);
 }
