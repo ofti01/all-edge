@@ -1,11 +1,14 @@
 package com.lotfi.compte.services;
 
+import com.lotfi.compte.dtos.ClientCinDto;
 import com.lotfi.compte.dtos.CompteCourantDto;
 import com.lotfi.compte.dtos.CompteEpargneDto;
 import com.lotfi.compte.entities.Compte;
 import com.lotfi.compte.entities.CompteCourant;
 import com.lotfi.compte.entities.CompteEpargne;
 import com.lotfi.compte.exceptions.AlreadyCompteExist;
+import com.lotfi.compte.exceptions.CinNotExist;
+import com.lotfi.compte.proxies.ClientProxy;
 import com.lotfi.compte.repositories.CompteRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,10 +25,13 @@ import java.util.stream.Collectors;
 public class CompteService {
 
     private final CompteRepository compteRepository;
+     private final ClientProxy clientProxy;
 
     public CompteCourantDto SaveCompteCourant(CompteCourantDto compteCourantDto) {
         log.debug("created compte courant", compteCourantDto);
         Compte compte = compteRepository.getCompteByCinClient(compteCourantDto.getCinClient());
+        boolean br = clientProxy.CheckCinIfExist(new ClientCinDto(0, compteCourantDto.getCinClient()));
+        if(!br) throw new CinNotExist(compteCourantDto.getCinClient());
         if (compte instanceof CompteCourant)
             throw new AlreadyCompteExist("Compte courant", compteCourantDto.getCinClient());
         CompteCourantDto courant = toDto(compteRepository.save(fromDto(compteCourantDto)));

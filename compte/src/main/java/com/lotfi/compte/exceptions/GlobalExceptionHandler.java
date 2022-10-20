@@ -15,4 +15,10 @@ public class GlobalExceptionHandler  {
     public @ResponseBody ErrorResponse HandleCompteAlreadyExist(AlreadyCompteExist ex){
         return new ErrorResponse(HttpStatus.NOT_FOUND.value(),ex.getMessage());
     }
+
+    @ExceptionHandler(value = CinNotExist.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public @ResponseBody ErrorResponse HandleCinNotExist(CinNotExist ex){
+        return new ErrorResponse(HttpStatus.NOT_FOUND.value(),ex.getMessage());
+    }
 }

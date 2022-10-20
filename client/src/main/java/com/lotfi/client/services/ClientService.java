@@ -36,8 +36,8 @@ public class ClientService {
     public ClientDto getOne(String cin){
         log.debug("request to get one client");
         Client client = clientRepository.getClientByCin(cin);
-        if(client == null) throw new RessourceNotFound(cin);
-        else return toDto(client);
+        if(client != null) return toDto(client);
+        else return null;
     }
 
     public static Client fromDto(ClientDto clientDto){
