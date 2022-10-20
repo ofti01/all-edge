@@ -3,6 +3,7 @@ package com.lotfi.client.services;
 import com.lotfi.client.dtos.ClientDto;
 import com.lotfi.client.entities.Client;
 import com.lotfi.client.entities.StatusClient;
+import com.lotfi.client.exceptions.RessourceNotFound;
 import com.lotfi.client.repositories.ClientRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,6 +31,13 @@ public class ClientService {
         return clientRepository.findAll().stream()
                 .map(ClientService::toDto)
                 .collect(Collectors.toList());
+    }
+
+    public ClientDto getOne(String cin){
+        log.debug("request to get one client");
+        Client client = clientRepository.getClientByCin(cin);
+        if(client != null) return toDto(client);
+        else return null;
     }
 
     public static Client fromDto(ClientDto clientDto){
