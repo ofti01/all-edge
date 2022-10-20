@@ -9,19 +9,28 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client" />
         <module name="operation" />
+        <module name="api-gateway-service" />
+        <module name="discovery-service" />
         <module name="compte" />
+        <module name="configuration-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway-service" target="11" />
       <module name="client" target="11" />
       <module name="compte" target="11" />
+      <module name="configuration-server" target="11" />
+      <module name="discovery-service" target="11" />
       <module name="operation" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway-service" options="-parameters" />
       <module name="client" options="-parameters" />
       <module name="compte" options="-parameters" />
+      <module name="configuration-server" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
       <module name="operation" options="-parameters" />
     </option>
   </component>
