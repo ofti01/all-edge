@@ -1,4 +1,4 @@
-package com.lotfi.client.payload;
+package org.lotfi.commons.payload;
 
 
 import org.springframework.cloud.openfeign.FeignClient;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @FeignClient(
         name = "notification",
-        url = "${clients.notification.url}"
+        url = "${commons.notification.url}"
 )
 public interface NotificationClient {
 

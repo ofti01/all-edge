@@ -1,8 +1,9 @@
 package org.example.notification;
 
 
-import com.lotfi.client.payload.NotificationRequest;
+
 import lombok.AllArgsConstructor;
+import org.lotfi.commons.payload.NotificationRequest;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -16,10 +17,10 @@ public class NotificationService {
     public void send(NotificationRequest notificationRequest) {
         notificationRepository.save(
                 Notification.builder()
-                        .toCustomerId(notificationRequest.customerId())
-                        .toCustomerEmail(notificationRequest.toCustomerName())
-                        .sender("Amigoscode")
-                        .message(notificationRequest.message())
+                        .toClientId(notificationRequest.clientID())
+                        .toNameClient(notificationRequest.NameClient())
+                        .sender("Lotfi")
+                        .mesToCinClient(notificationRequest.cinClient())
                         .sentAt(LocalDateTime.now())
                         .build()
         );

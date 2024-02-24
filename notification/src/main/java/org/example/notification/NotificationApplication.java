@@ -7,14 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
-@SpringBootApplication(
-        scanBasePackages = {
-                "com.alledge.notification",
-                "com.alledge.amqp",
-        }
-)
+@SpringBootApplication
+@EnableEurekaClient
 @PropertySources({
-        @PropertySource("classpath:clients-${spring.profiles.active}.properties")
+        @PropertySource("classpath:commons-${spring.profiles.active}.properties")
 })
 public class NotificationApplication {
     public static void main(String[] args) {

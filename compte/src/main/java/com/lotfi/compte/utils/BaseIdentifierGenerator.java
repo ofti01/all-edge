@@ -1,5 +1,6 @@
 package com.lotfi.compte.utils;
 
+
 import org.apache.commons.math3.random.RandomDataGenerator;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;

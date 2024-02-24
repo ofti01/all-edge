@@ -3,13 +3,18 @@ package com.lotfi.client.services;
 import com.lotfi.client.dtos.ClientDto;
 import com.lotfi.client.entities.Client;
 import com.lotfi.client.entities.StatusClient;
+
 import com.lotfi.client.repositories.ClientRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.example.amqp.RabbitMQMessageProducer;
+import org.lotfi.commons.payload.NotificationRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -20,8 +25,21 @@ public class ClientService {
 
     private final ClientRepository clientRepository;
 
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
+
     public ClientDto saveClient(ClientDto clientDto){
         log.debug("save client ",clientDto);
+
+        NotificationRequest notificationRequest= new NotificationRequest(
+                clientDto.getId(),
+                clientDto.getFirstName()+clientDto.getLastName(),
+                clientDto.getCinClient()
+        );
+        rabbitMQMessageProducer.publish(
+                notificationRequest,
+                "internal.exchange",
+                "internal.notification.routing-key"
+        );
         return toDto(clientRepository.save(fromDto(clientDto)));
     }
 
@@ -37,9 +55,9 @@ public class ClientService {
                 .id(clientDto.getId())
                 .firstName(clientDto.getFirstName())
                 .lastName(clientDto.getLastName())
-                .cin(clientDto.getCin())
+                .cinClient(clientDto.getCinClient())
                 .address(AddressService.fromDto(clientDto.getAddressDto()))
-                .statusClient(clientDto.getStatusClient() == "SINGLE" ? StatusClient.SINGLE: StatusClient.MARRIED)
+                .statusClient(Objects.equals(clientDto.getStatusClient(), "SINGLE") ? StatusClient.SINGLE: StatusClient.MARRIED)
                 .build();
     }
 
@@ -49,7 +67,7 @@ public class ClientService {
                 .firstName(client.getFirstName())
                 .lastName(client.getLastName())
                 .addressDto(AddressService.toDto(client.getAddress()))
-                .cin(client.getCin())
+                .cinClient(client.getCinClient())
                 .statusClient(client.getStatusClient().toString())
                 .build();
     }

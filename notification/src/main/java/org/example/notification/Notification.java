@@ -21,18 +21,11 @@ import java.time.LocalDateTime;
 public class Notification {
 
     @Id
-    @SequenceGenerator(
-            name = "notification_id_sequence",
-            sequenceName = "notification_id_sequence"
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "notification_id_sequence"
-    )
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long notificationId;
-    private Integer toCustomerId;
-    private String toCustomerEmail;
+    private Long toClientId;
+    private String toNameClient;
     private String sender;
-    private String message;
+    private String mesToCinClient;
     private LocalDateTime sentAt;
 }

@@ -7,22 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="apigw" />
+        <module name="amqp" />
         <module name="client" />
         <module name="operation" />
+        <module name="eureka-server" />
         <module name="compte" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="client" target="11" />
-      <module name="compte" target="11" />
-      <module name="operation" target="11" />
+      <module name="amqp.main" target="17" />
+      <module name="amqp.test" target="17" />
+      <module name="commons" target="17" />
+      <module name="commons.test" target="17" />
+      <module name="notification" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="client" options="-parameters" />
-      <module name="compte" options="-parameters" />
-      <module name="operation" options="-parameters" />
+      <module name="amqp" options="" />
+      <module name="client" options="" />
+      <module name="commons" options="" />
+      <module name="compte" options="" />
+      <module name="operation" options="" />
     </option>
   </component>
 </project>

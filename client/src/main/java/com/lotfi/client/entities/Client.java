@@ -1,11 +1,11 @@
 package com.lotfi.client.entities;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -18,12 +18,15 @@ public class Client implements Serializable {
     private Long id;
 
     private String firstName;
+
     private String lastName;
+
     @Embedded
     private Address address;
 
     @Column(name = "cin", unique = true)
-    private String cin;
+    private String cinClient;
+
     @Enumerated(EnumType.STRING)
     private StatusClient statusClient;
 }

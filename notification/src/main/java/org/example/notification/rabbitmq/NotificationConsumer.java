@@ -1,10 +1,10 @@
 package org.example.notification.rabbitmq;
 
 
-import com.lotfi.client.payload.NotificationRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.notification.NotificationService;
+import org.lotfi.commons.payload.NotificationRequest;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
