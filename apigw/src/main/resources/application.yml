@@ -9,10 +9,22 @@ spring:
     cloud:
        gateway:
           routes:
-            - id: customer
-              uri: lb://CUSTOMER
+            - id: client
+              uri: lb://CLIENT
               predicates:
-                - Path=/api/v1/customers/**
+                - Path=/api/v1/clients/**
+            - id: compte
+              uri: lb://COMPTE
+              predicates:
+                - Path=/api/v1/comptes/**
+            - id: operation
+              uri: lb://OPERATION
+              predicates:
+                - Path=/api/v1/operations/**
+            - id: notification
+              uri: lb://NOTIFICATION
+              predicates:
+                - Path=/api/v1/notifications/**
 
 eureka:
     client:
