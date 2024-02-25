@@ -5,7 +5,7 @@ spring:
     name: client-service
   datasource:
     password: 12345
-    url: jdbc:postgresql://postgres:5432/clients
+    url: jdbc:postgresql://postgrescl:5432/clients
     username: lotfi
   jpa:
     hibernate:

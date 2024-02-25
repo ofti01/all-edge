@@ -9,8 +9,6 @@
     </parent>
     <packaging>jar</packaging>
     <artifactId>client</artifactId>
-
-
     <build>
         <plugins>
             <plugin>

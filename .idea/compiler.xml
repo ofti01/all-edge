@@ -8,11 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigw" />
+        <module name="compte (2)" />
         <module name="amqp" />
         <module name="client" />
         <module name="operation" />
         <module name="eureka-server" />
         <module name="compte" />
+      </profile>
+      <profile name="Annotation profile for all-edge" enabled="true">
+        <sourceOutputDir name="../operation/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../operation/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="compte (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

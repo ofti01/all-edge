@@ -4,7 +4,7 @@ spring:
   application:
     name: operation-service
   datasource:
-    url: mongodb://mongo:27017/operations
+    url: mongodb://mongodb:27017/operations
   zipkin:
     base-url: http://zipkin:9411
   rabbitmq:
