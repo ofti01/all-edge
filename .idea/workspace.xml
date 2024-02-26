@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d991128-8342-4140-9427-f79a5fed03f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/org/example/amqp/RabbitMQConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/org/example/amqp/RabbitMQMessageProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/src/test/java/org/example/amqp/AmqpApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/target/classes/org/example/amqp/RabbitMQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/target/classes/org/example/amqp/RabbitMQMessageProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/target/test-classes/org/example/amqp/AmqpApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/java/ApiGWApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/lotfi/client/services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compte/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compte/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/compte/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/CompteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/CompteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/entities/CompteCourant.java" beforeDir="false" afterPath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/entities/CompteCourant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/entities/CompteEpargne.java" beforeDir="false" afterPath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/entities/CompteEpargne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/utils/BaseIdentifierGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/compte/src/main/java/com/lotfi/compte/utils/BaseIdentifierGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/lotfi/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/org/example/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/org/example/notification/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/org/example/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/org/example/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/org/example/notification/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/org/example/notification/NotificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/operation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operation/src/main/java/com/lotfi/operation/OperationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/operation/src/main/java/com/lotfi/operation/OperationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operation/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/operation/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2crN322h6BT4gVCnlSzx5rhymhn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.client [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.client [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.compte [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.operation [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.operation [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rabbitmq [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CompteApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ide.FileNotInSourceRootChecker.no.check&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lotfi/Documents/java-projects/all-edge/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CompteApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lotfi.client.ClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="compte (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lotfi.compte.CompteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="compte (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lotfi.operation.OperationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-25a4bffe" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d991128-8342-4140-9427-f79a5fed03f2" name="Changes" comment="" />
+      <created>1708865535134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708865535134</updated>
+      <workItem from="1708865537109" duration="1311000" />
+      <workItem from="1708867952636" duration="4592000" />
+      <workItem from="1708884906811" duration="2762000" />
+      <workItem from="1708889066718" duration="4466000" />
+      <workItem from="1708963755008" duration="12433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

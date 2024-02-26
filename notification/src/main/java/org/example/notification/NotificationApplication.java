@@ -8,7 +8,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
 @SpringBootApplication
-@EnableEurekaClient
 @PropertySources({
         @PropertySource("classpath:commons-${spring.profiles.active}.properties")
 })

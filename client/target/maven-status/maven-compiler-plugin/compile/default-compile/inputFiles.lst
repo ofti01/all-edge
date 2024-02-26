@@ -1,0 +1,11 @@
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/entities/Client.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/dtos/AddressDto.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/web/ClientController.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/exceptions/GlobalExceptionHandler.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/services/ClientService.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/services/AddressService.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/repositories/ClientRepository.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/ClientApplication.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/entities/Address.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/entities/StatusClient.java
+/home/lotfi/Documents/java-projects/all-edge/client/src/main/java/com/lotfi/client/dtos/ClientDto.java

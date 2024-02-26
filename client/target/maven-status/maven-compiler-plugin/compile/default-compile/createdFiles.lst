@@ -1,0 +1,15 @@
+com/lotfi/client/dtos/AddressDto$AddressDtoBuilder.class
+com/lotfi/client/ClientApplication.class
+com/lotfi/client/exceptions/GlobalExceptionHandler.class
+com/lotfi/client/entities/Address$AddressBuilder.class
+com/lotfi/client/services/AddressService.class
+com/lotfi/client/entities/StatusClient.class
+com/lotfi/client/services/ClientService.class
+com/lotfi/client/repositories/ClientRepository.class
+com/lotfi/client/dtos/ClientDto.class
+com/lotfi/client/entities/Address.class
+com/lotfi/client/web/ClientController.class
+com/lotfi/client/dtos/AddressDto.class
+com/lotfi/client/entities/Client.class
+com/lotfi/client/dtos/ClientDto$ClientDtoBuilder.class
+com/lotfi/client/entities/Client$ClientBuilder.class

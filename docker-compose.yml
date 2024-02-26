@@ -55,13 +55,6 @@ services:
     container_name: "mongodb"
     ports:
       - 27017:27017
-  zipkin:
-    image: openzipkin/zipkin
-    container_name: zipkin
-    ports:
-      - "9411:9411"
-    networks:
-      - spring
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
     container_name: rabbitmq
@@ -70,93 +63,69 @@ services:
       - "15672:15672"
     networks:
       - spring
-  eureka-server:
-    image: lotfi07/eureka-server:latest
-    container_name: eureka-server
-    ports:
-      - "8761:8761"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-  apigw:
-    image: amigoscode/apigw:latest
-    container_name: apigw
-    ports:
-      - "8081:8081"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-      - eureka-server
   client:
-    image: amigoscode/client:latest
+    image: client:1.0
     container_name: client
     ports:
       - "8082:8082"
     environment:
-      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_PROFILES_ACTIVE=prod
     networks:
       - spring
       - postgrescl
     depends_on:
-      - zipkin
       - postgrescl
       - rabbitmq
   compte:
-    image: amigoscode/compte:latest
+    image: compte:1.0
     container_name: compte
     ports:
       - "8083:8083"
     environment:
-      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_PROFILES_ACTIVE=prod
     networks:
       - spring
       - mysqldb
     depends_on:
-      - zipkin
       - mysqldb
       - rabbitmq
   operation:
-    image: lotfi07/operation:latest
+    image: operation:1.0
     container_name: operation
     ports:
       - "8085:8085"
     environment:
-      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_PROFILES_ACTIVE=prod
     networks:
       - spring
       - mongodb
     depends_on:
-      - zipkin
       - mongodb
       - rabbitmq
   notification:
-    image: amigoscode/notification:latest
+    image: notification:1.0
     container_name: notification
     ports:
       - "8084:8084"
     environment:
-      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_PROFILES_ACTIVE=prod
     networks:
       - spring
       - postgres
     depends_on:
-      - zipkin
       - postgres
       - rabbitmq
 networks:
   postgres:
     driver: bridge
+  mongodb:
+      driver: bridge
   spring:
     driver: bridge
   postgrescl:
     driver: bridge
-
+  mysqldb:
+    driver: bridge
 volumes:
   postgres:
   pgadmin:

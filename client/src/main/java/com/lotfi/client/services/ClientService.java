@@ -5,9 +5,10 @@ import com.lotfi.client.entities.Client;
 import com.lotfi.client.entities.StatusClient;
 
 import com.lotfi.client.repositories.ClientRepository;
+import com.lotfi.rabbitmq.RabbitMQMessageProducer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.amqp.RabbitMQMessageProducer;
+
 import org.lotfi.commons.payload.NotificationRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

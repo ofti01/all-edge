@@ -1,0 +1,7 @@
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/NotificationController.java
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/NotificationRepository.java
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/NotificationConfig.java
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/Notification.java
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/NotificationApplication.java
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/rabbitmq/NotificationConsumer.java
+/home/lotfi/Documents/java-projects/all-edge/notification/src/main/java/org/example/notification/NotificationService.java

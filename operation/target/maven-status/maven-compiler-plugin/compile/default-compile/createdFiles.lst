@@ -1,0 +1,5 @@
+com/lotfi/operation/OperationApplication.class
+com/lotfi/operation/web/OperationController.class
+com/lotfi/operation/entities/Operation$OperationBuilder.class
+com/lotfi/operation/repositories/OperationRepository.class
+com/lotfi/operation/entities/Operation.class

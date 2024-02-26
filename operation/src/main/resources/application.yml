@@ -1,4 +1,6 @@
-
+  spring:
+    profiles:
+      active: @SPRING_PROFILE@
 ####### Mongo Properties ###########
 server:
   port: 8085

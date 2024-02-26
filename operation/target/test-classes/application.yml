@@ -1,0 +1,24 @@
+  spring:
+    profiles:
+      active: dev
+####### Mongo Properties ###########
+server:
+  port: 8085
+spring:
+  application:
+    name: operation-service
+  datasource:
+    url: mongodb://localhost:27017/operations
+  zipkin:
+    base-url: http://localhost:9411
+  rabbitmq:
+    addresses: localhost:5672
+  profiles:
+    active: default
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+    enabled: true
